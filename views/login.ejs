@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log In Page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!--JQuery Mobile-->
+    <link rel="stylesheet" href="/stylesheets/themes/bidjay.min.css" />
+    <link rel="stylesheet" href="/stylesheets/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!--JQuery Mobile-->
+  </head>
+  <body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>Log In</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+      <form data-ajax="false" action="/doLogin" method="post">
+        Username/Email:
+        <input placeholder="Username/Password" type="text" name="credential" id="">
+        Password:
+        <input placeholder="Password" type="password" name="password" id="">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+
+    <div data-role="footer">
+      <h4>WHYYYYYYYYYYYYYYYY:(</h4>
+    </div>
+
+
+
+  </div>
+  </body>
+</html>

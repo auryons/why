@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!--JQuery Mobile-->
+    <link rel="stylesheet" href="/stylesheets/themes/bidjay.min.css" />
+    <link rel="stylesheet" href="/stylesheets/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!--JQuery Mobile-->
+  </head>
+  <body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>Home Page</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+      <% if (user) { %>
+        <p>Hello <%= user.username %>, Welcome to Home Page</p>
+      <% } %>
+      <% if (user) { %>
+        <a href="/logout">Click here to go to LogOut</a>
+      <% } else {%>
+        <a href="/register">Click here to go to Register</a>
+        <a href="/">Click here to go to LogIn</a>
+      <% } %>
+
+    </div>
+
+    <div data-role="footer">
+      <h4>WHYYYYYYYYYYYYYYYY:(</h4>
+    </div>
+
+
+
+  </div>
+  </body>
+</html>
