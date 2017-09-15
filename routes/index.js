@@ -113,10 +113,10 @@ router.post('/doRegister', function(req, res, next) {
     });
 });
 
-router.get("/logout",function (req,res,next) {
+router.get("/logout",function (req,res) {
     //req.session.destroy(); //hapus semua session
     //req.session.destroy('KEY'); //hapus session dari 'KEY'
-    req.session.destroy('user');
+    req.session.destroy();
     return res.redirect('/');
 });
 
