@@ -35,7 +35,7 @@ router.get('/auth/facebook/callback', passport.authenticate('facebook', { failur
 //buat konek MYSQL
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-    host     : 'ql12.freemysqlhosting.net',
+    host     : 'sql12.freemysqlhosting.net',
     user     : 'sql12194671',
     password : 'aeTS8bpsub',
     database : 'sql12194671'
